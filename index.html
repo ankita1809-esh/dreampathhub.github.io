@@ -235,7 +235,6 @@
         <ul>
             <li><a href="#">📌 Study Material PDF</a></li>
             <li><a href="#">🎥 Motivational Video</a></li>
-            <li><a href="#">💻 Web Development Guide</a></li>
         </ul>
     </div>
 </section>
@@ -363,3 +362,218 @@
 <footer>
     <p><a href="privacy-policy.html" target="_blank">Privacy Policy</a></p>
 </footer>
+<section id="study-notes">
+    <h2>📖 Study Notes</h2>
+
+    <div class="note">
+        <h3>🔹 HTML Basics</h3>
+        <p>HTML (HyperText Markup Language) is used to structure web pages.</p>
+        <a href="notes/html-basics.pdf" download>📥 Download PDF</a>
+    </div>
+
+    <div class="note">
+        <h3>🔹 CSS Fundamentals</h3>
+        <p>CSS (Cascading Style Sheets) is used to style web pages.</p>
+        <a href="notes/css-fundamentals.pdf" download>📥 Download PDF</a>
+    </div>
+
+    <div class="note">
+        <h3>🔹 JavaScript Essentials</h3>
+        <p>JavaScript adds interactivity to your website.</p>
+        <a href="notes/javascript-essentials.pdf" download>📥 Download PDF</a>
+    </div>
+</section>
+<button onclick="toggleNotes()">📚 Show/Hide Notes</button>
+
+<script>
+function toggleNotes() {
+    var notes = document.getElementById("study-notes");
+    if (notes.style.display === "none") {
+        notes.style.display = "block";
+    } else {
+        notes.style.display = "none";
+    }
+}
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10 & 12 Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        .notes-section {
+            margin-top: 20px;
+        }
+        .notes-section h3 {
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e3f2fd;
+            border-radius: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Notes - Web & School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .tab-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .tab-button {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .tab-button.active {
+            background: #0056b3;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .notes-section h3 {
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e3f2fd;
+            border-radius: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>📚 Study Notes - Web & School</h2>
+
+        <!-- Tab Buttons -->
+        <div class="tab-buttons">
+            <button class="tab-button" onclick="showTab('schoolNotes')">📖 Class 10 & 12 Notes</button>
+        </div>
+        <!-- Class 10 & 12 Notes -->
+        <div class="tab-content" id="schoolNotes">
+            <div class="notes-section">
+                <h3>📖 Class 10 Notes</h3>
+                <ul>
+                    <li><a href="notes/class10-maths.pdf" download>📗 Maths</a></li>
+                    <li><a href="notes/class10-science.pdf" download>🔬 Science</a></li>
+                </ul>
+            </div>
+            <div class="notes-section">
+                <h3>📘 Class 12 Notes</h3>
+                <ul>
+                    <li><a href="notes/class12-physics.pdf" download>⚡ Physics</a></li>
+                    <li><a href="notes/class12-chemistry.pdf" download>🧪 Chemistry</a></li>
+                    <li><a href="notes/class12-maths.pdf" download>➗ Maths</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected tab and activate button
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+<div class="notes-section">
+    <h3>📖 Class 10 Science Notes</h3>
+    <ul>
+        <div class="notes-container">
+            <h3>📘 Class 10 Science Notes</h3>
+            
+            <div class="notes">
+                <a href="chapter-03.pdf" target="_blank">📖 Chapter 3</a>
+                <a href="chapter-04.pdf" target="_blank">📖 Chapter 4</a>
+            </div>
+            
+        
